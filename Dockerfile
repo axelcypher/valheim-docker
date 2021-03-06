@@ -31,20 +31,20 @@ ENV PUID=1000                           \
     TZ=America/Los_Angeles              \
     # Server Specific env variables.
     PORT="2456"                         \
-    NAME="Valheim Docker"               \
-    WORLD="Dedicated"                   \
+    NAME="theMIGHTYvalheim"               \
+    WORLD="theMIGHTYvalheim"                   \
     PUBLIC="1"                          \
-    PASSWORD="12345"                    \
+    PASSWORD=""                    \
     # Auto Update Configs
-    AUTO_UPDATE="0"                     \
-    AUTO_UPDATE_SCHEDULE="0 1 * * *"    \
+    AUTO_UPDATE="1"                     \
+    AUTO_UPDATE_SCHEDULE="0 3 * * *"    \
     # Auto Backup Configs
-    AUTO_BACKUP="0"                     \
+    AUTO_BACKUP="1"                     \
     AUTO_BACKUP_SCHEDULE="*/15 * * * *" \
     AUTO_BACKUP_REMOVE_OLD="1"          \
-    AUTO_BACKUP_DAYS_TO_LIVE="3"        \
-    AUTO_BACKUP_ON_UPDATE="0"           \
-    AUTO_BACKUP_ON_SHUTDOWN="0"         \
+    AUTO_BACKUP_DAYS_TO_LIVE="2"        \
+    AUTO_BACKUP_ON_UPDATE="1"           \
+    AUTO_BACKUP_ON_SHUTDOWN="1"         \
     UPDATE_ON_STARTUP="1"
 
 COPY ./src/scripts/*.sh /home/steam/scripts/
